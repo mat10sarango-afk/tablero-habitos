@@ -93,7 +93,7 @@ function renderizarHabitos() {
   guardarHabitos();
 }
 
-// Evita inyección de HTML al mostrar el nombre del hábito
+// Evitar inyección de HTML al mostrar el nombre del hábito
 function escaparHTML(texto) {
   const div = document.createElement("div");
   div.textContent = texto;
