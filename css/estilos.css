@@ -1,0 +1,40 @@
+body {
+  background-color: #f7f7fb;
+}
+
+/* Item base de la lista */
+.habito-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Texto del hábito */
+.habito-nombre {
+  cursor: pointer;
+  flex: 1;
+  user-select: none;
+}
+
+/* Estado: hábito completado */
+.habito-item.completado {
+  background-color: #eafbea;
+  border-color: #b7e4c7;
+}
+
+.habito-item.completado .habito-nombre {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+/* Estado: hábito pendiente (resalte sutil al pasar el mouse) */
+.habito-item.pendiente:hover {
+  background-color: #f1f3ff;
+}
+
+/* Botón eliminar */
+.btn-eliminar {
+  line-height: 1;
+}
