@@ -1,5 +1,6 @@
 body {
-  background-color: #f7f7fb;
+  background: linear-gradient(160deg, #fef6ec 0%, #f0ece2 100%);
+  min-height: 100vh;
 }
 
 /* Item base de la lista */
